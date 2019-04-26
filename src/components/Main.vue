@@ -1,18 +1,13 @@
 <template>
   <div class="container">
-    <img src="../assets/1.png" />
+    <img class="content-image" :src="img" />
     <div class="content">
-      <h1>SIT Flats</h1>
-      <p>
-        Exploring historical reasons for the creation of the Singapore Improvement Trust, with its policies
-        and architectural designs of its flats.
-        <br />
-        <b>Click on any image below to start</b>
-      </p>
+      <h1>{{title}}</h1>
+      <p v-html="content"></p>
       <div class="places">
-        <ImageButton :src="require('../assets/tb/1.jpeg')" text="Tiong Bahru" />
-        <ImageButton :src="require('../assets/d/1.png')" text="Dakota Crescent" />
-        <ImageButton :src="require('../assets/ks/1.jpeg')" text="Kampung Silat" />
+        <ImageButton src="/static/tb/1.jpeg" text="Tiong Bahru" :onClick="() => navigate('tb')" />
+        <ImageButton src="/static/dc/1.png" text="Dakota Crescent" :onClick="() => navigate('dc')" />
+        <ImageButton src="/static/ks/1.jpeg" text="Kampung Silat" :onClick="() => navigate('ks')" />
       </div>
     </div>
   </div>
@@ -23,7 +18,24 @@ import ImageButton from './ImageButton.vue'
 
 export default {
   name: 'HelloWorld',
-  components: { ImageButton }
+  components: { ImageButton },
+  data () {
+    return {
+      main: true,
+      title: 'SIT Flats',
+      img: '/static/1.png',
+      content: 'Exploring historical reasons for the creation of the Singapore Improvement Trust, with its policies and architectural designs of its flats. <br /> <b>Click on any image below to start</b>'
+    }
+  },
+  methods: {
+    navigate: function (type) {
+      if (type === 'dc') {
+        this.img = '/static/dc/2.png'
+        this.title = 'Dakota Crescent'
+        this.content = 'Coming soon'
+      }
+    }
+  }
 }
 </script>
 
@@ -53,8 +65,9 @@ h1 {
 p {
   margin: 40px;
 }
-img {
+.content-image {
   height: 100vh;
+  min-width: 800px;
   max-width: 100%;
 }
 </style>

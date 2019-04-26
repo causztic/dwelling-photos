@@ -1,6 +1,6 @@
 <template>
   <div class="select">
-    <img :src="src" @mouseover="hover = true" @mouseleave="hover = false" />
+    <img :src="src" @mouseover="hover = true" @mouseleave="hover = false" @click="onClick" />
     <h2 :class="{active: hover}">{{text}}</h2>
   </div>
 </template>
@@ -10,7 +10,8 @@ export default {
   name: 'ImageButton',
   props: {
     src: String,
-    text: String
+    text: String,
+    onClick: Function
   },
   data () {
     return {
