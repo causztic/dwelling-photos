@@ -33,6 +33,7 @@ export default {
   justify-content: space-between;
 }
 .content {
+  max-width: 500px;
   width: 100%;
 }
 
@@ -50,5 +51,6 @@ p {
 }
 img {
   height: 100%;
+  max-width: 100%;
 }
 </style>
