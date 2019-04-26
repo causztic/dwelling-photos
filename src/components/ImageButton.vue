@@ -25,17 +25,22 @@ export default {
     width: 150px;
   }
   .select {
+    width: 150px;
     position: relative;
   }
   h2 {
     display: none;
+    top: 10%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
   }
   h2.active {
     display: block;
   }
 
   img:hover {
-    opacity: 0.5;
+    opacity: 0.1;
     cursor: pointer;
   }
 </style>

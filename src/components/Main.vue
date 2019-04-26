@@ -6,10 +6,12 @@
       <p>
         Exploring historical reasons for the creation of the Singapore Improvement Trust, with its policies
         and architectural designs of its flats.
+        <br />
+        <b>Click on any image below to start</b>
       </p>
       <div class="places">
         <ImageButton :src="require('../assets/tb/1.jpeg')" text="Tiong Bahru" />
-        <ImageButton :src="require('../assets/d/1.png')" text="Dakota" />
+        <ImageButton :src="require('../assets/d/1.png')" text="Dakota Crescent" />
         <ImageButton :src="require('../assets/ks/1.jpeg')" text="Kampung Silat" />
       </div>
     </div>
@@ -27,7 +29,7 @@ export default {
 
 <style scoped>
 .container {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -40,6 +42,8 @@ export default {
 .places {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 h1 {
@@ -50,7 +54,7 @@ p {
   margin: 40px;
 }
 img {
-  height: 100%;
+  height: 100vh;
   max-width: 100%;
 }
 </style>
