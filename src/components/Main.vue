@@ -3,6 +3,10 @@
     <progressive-img class="content-image" :src="img" />
     <img class="home-button" :class="{ disabled: main }" src="/static/icons/home.svg" @click="() => navigate('home')" />
     <div class="content">
+      <div class="controls" :class="{ disabled: main }">
+        <img src="/static/icons/left-arrow.svg" @click="previousImage"/>
+        <img src="/static/icons/right-arrow.svg" @click="nextImage"/>
+      </div>
       <h1>{{title}}</h1>
       <p v-html="content"></p>
       <div class="places">
@@ -19,6 +23,7 @@ import ImageButton from './ImageButton.vue'
 
 const originalTitle = 'SIT Flats'
 const originalContent = 'Exploring historical reasons for the creation of the Singapore Improvement Trust, with its policies and architectural designs of its flats. <br /><ol><li>Some images on the left can be scrolled</li><li>Click on any image below to start</li>'
+const imageLengths = { 'tb': 1, 'dc': 5, 'ks': 1 }
 
 export default {
   name: 'HelloWorld',
@@ -28,11 +33,30 @@ export default {
       main: true,
       title: originalTitle,
       img: '/static/1.webp',
-      content: originalContent
+      content: originalContent,
+      area: 'main',
+      imageIndices: { 'tb': 1, 'dc': 1, 'ks': 1 }
     }
   },
   methods: {
+    previousImage: function () {
+      if (this.imageIndices[this.area] === 1) {
+        this.imageIndices[this.area] = imageLengths[this.area]
+      } else {
+        this.imageIndices[this.area] -= 1
+      }
+      this.img = `/static/${this.area}/${this.imageIndices[this.area]}_ex.webp`
+    },
+    nextImage: function () {
+      if (this.imageIndices[this.area] === imageLengths[this.area]) {
+        this.imageIndices[this.area] = 1
+      } else {
+        this.imageIndices[this.area] += 1
+      }
+      this.img = `/static/${this.area}/${this.imageIndices[this.area]}_ex.webp`
+    },
     navigate: function (type) {
+      this.area = type
       if (type === 'tb') {
         this.main = false
         this.img = '/static/tb/1_ex.webp'
@@ -72,9 +96,24 @@ export default {
   opacity: 0.5;
 }
 
-.home-button.disabled {
+.disabled {
   opacity: 0;
   cursor: initial;
+}
+
+.controls {
+  position: absolute;
+  top: 22px;
+  left: -90px;
+  z-index: 2;
+  padding: 6px 0 0 3px;
+  background-color: rgba(255,255,255,0.5);
+}
+
+.controls img {
+  width: 32px;
+  margin-right: 16px;
+  cursor: pointer;
 }
 
 .container {
@@ -87,6 +126,7 @@ export default {
   display: flex;
   flex-direction: column;
   width: 490px;
+  position: relative;
 }
 
 .places {
