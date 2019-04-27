@@ -1,8 +1,6 @@
 <template>
   <div class="container">
-    <div class="image-container">
-      <img class="content-image" :src="img" />
-    </div>
+    <progressive-img class="content-image" :src="img" />
     <img class="home-button" :class="{ disabled: main }" src="/static/icons/home.svg" @click="() => navigate('home')" />
     <div class="content">
       <h1>{{title}}</h1>
@@ -88,6 +86,7 @@ export default {
 .content {
   display: flex;
   flex-direction: column;
+  width: 490px;
 }
 
 .places {
@@ -108,15 +107,9 @@ p {
   margin: 40px;
 }
 
-.image-container {
-  height: 100vh;
-  overflow: auto;
-
-}
-
 .content-image {
-  width: 100%;
-  min-height: 100vh;
-  margin-bottom: -6px;
+  overflow: auto;
+  height: 100vh;
 }
+
 </style>

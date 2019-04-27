@@ -29,11 +29,11 @@ export default {
     width: 150px;
     overflow: auto;
     position: relative;
-    padding: 12px;
+    padding: 6px;
   }
   h2 {
     display: none;
-    top: 10%;
+    top: 30%;
     left: 0;
     width: 100%;
     position: absolute;
