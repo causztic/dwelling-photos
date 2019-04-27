@@ -27,14 +27,18 @@ export default {
   }
   .select {
     width: 150px;
+    overflow: auto;
     position: relative;
+    padding: 12px;
   }
   h2 {
     display: none;
     top: 10%;
+    left: 0;
     width: 100%;
     position: absolute;
     z-index: -1;
+    font-size: 18px;
   }
   h2.active {
     display: block;

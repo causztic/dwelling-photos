@@ -1,6 +1,9 @@
 <template>
   <div class="container">
-    <img class="content-image" :src="img" />
+    <div class="image-container">
+      <img class="content-image" :src="img" />
+    </div>
+    <img class="home-button" src="/static/icons/home.svg" />
     <div class="content">
       <h1>{{title}}</h1>
       <p v-html="content"></p>
@@ -21,17 +24,24 @@ export default {
   components: { ImageButton },
   data () {
     return {
-      main: true,
       title: 'SIT Flats',
-      img: '/static/1.png',
-      content: 'Exploring historical reasons for the creation of the Singapore Improvement Trust, with its policies and architectural designs of its flats. <br /> <b>Click on any image below to start</b>'
+      img: '/static/1.webp',
+      content: 'Exploring historical reasons for the creation of the Singapore Improvement Trust, with its policies and architectural designs of its flats. <br /><ol><li>Some images on the left can be scrolled</li><li>Click on any image below to start</li>'
     }
   },
   methods: {
     navigate: function (type) {
-      if (type === 'dc') {
-        this.img = '/static/dc/2.png'
+      if (type === 'tb') {
+        this.img = '/static/tb/1_ex.webp'
+        this.title = 'Tiong Bahru'
+        this.content = 'Coming soon'
+      } else if (type === 'dc') {
+        this.img = '/static/dc/1_ex.webp'
         this.title = 'Dakota Crescent'
+        this.content = 'Coming soon'
+      } else if (type === 'ks') {
+        this.img = '/static/ks/1_ex.png'
+        this.title = 'Kampung Silat'
         this.content = 'Coming soon'
       }
     }
@@ -40,6 +50,14 @@ export default {
 </script>
 
 <style scoped>
+.home-button {
+  position: absolute;
+  right: 12px;
+  top: 22px;
+  width: 32px;
+  cursor: pointer;
+}
+
 .container {
   min-height: 100vh;
   display: flex;
@@ -47,14 +65,16 @@ export default {
   justify-content: space-between;
 }
 .content {
-  max-width: 500px;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .places {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-top: auto;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
   width: 100%;
 }
 
@@ -62,12 +82,20 @@ h1 {
   width: 100%;
   text-align: center;
 }
+
 p {
   margin: 40px;
 }
-.content-image {
+
+.image-container {
   height: 100vh;
-  min-width: 800px;
-  max-width: 100%;
+  overflow: auto;
+
+}
+
+.content-image {
+  width: 100%;
+  min-height: 100vh;
+  margin-bottom: -6px;
 }
 </style>

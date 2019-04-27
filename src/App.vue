@@ -26,4 +26,9 @@ export default {
 body {
   margin: 0;
 }
+
+ol li {
+  text-align: left;
+}
+
 </style>
