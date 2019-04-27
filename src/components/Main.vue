@@ -3,7 +3,7 @@
     <div class="image-container">
       <img class="content-image" :src="img" />
     </div>
-    <img class="home-button" src="/static/icons/home.svg" />
+    <img class="home-button" :class="{ disabled: main }" src="/static/icons/home.svg" @click="() => navigate('home')" />
     <div class="content">
       <h1>{{title}}</h1>
       <p v-html="content"></p>
@@ -19,30 +19,42 @@
 <script>
 import ImageButton from './ImageButton.vue'
 
+const originalTitle = 'SIT Flats'
+const originalContent = 'Exploring historical reasons for the creation of the Singapore Improvement Trust, with its policies and architectural designs of its flats. <br /><ol><li>Some images on the left can be scrolled</li><li>Click on any image below to start</li>'
+
 export default {
   name: 'HelloWorld',
   components: { ImageButton },
   data () {
     return {
-      title: 'SIT Flats',
+      main: true,
+      title: originalTitle,
       img: '/static/1.webp',
-      content: 'Exploring historical reasons for the creation of the Singapore Improvement Trust, with its policies and architectural designs of its flats. <br /><ol><li>Some images on the left can be scrolled</li><li>Click on any image below to start</li>'
+      content: originalContent
     }
   },
   methods: {
     navigate: function (type) {
       if (type === 'tb') {
+        this.main = false
         this.img = '/static/tb/1_ex.webp'
         this.title = 'Tiong Bahru'
         this.content = 'Coming soon'
       } else if (type === 'dc') {
+        this.main = false
         this.img = '/static/dc/1_ex.webp'
         this.title = 'Dakota Crescent'
         this.content = 'Coming soon'
       } else if (type === 'ks') {
-        this.img = '/static/ks/1_ex.png'
+        this.main = false
+        this.img = '/static/ks/1_ex.webp'
         this.title = 'Kampung Silat'
         this.content = 'Coming soon'
+      } else {
+        this.main = true
+        this.img = '/static/1.webp'
+        this.title = originalTitle
+        this.content = originalContent
       }
     }
   }
@@ -56,6 +68,15 @@ export default {
   top: 22px;
   width: 32px;
   cursor: pointer;
+}
+
+.home-button:hover {
+  opacity: 0.5;
+}
+
+.home-button.disabled {
+  opacity: 0;
+  cursor: initial;
 }
 
 .container {
