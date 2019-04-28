@@ -23,7 +23,7 @@ import ImageButton from './ImageButton.vue'
 
 const originalTitle = 'SIT Flats'
 const originalContent = 'Exploring historical reasons for the creation of the Singapore Improvement Trust, with its policies and architectural designs of its flats. <br /><ol><li>Some images on the left can be scrolled</li><li>Click on any image below to start</li>'
-const imageLengths = { 'tb': 1, 'dc': 5, 'ks': 1 }
+const imageLengths = { 'tb': 18, 'dc': 5, 'ks': 11 }
 
 export default {
   name: 'HelloWorld',
