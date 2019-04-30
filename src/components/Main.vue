@@ -41,7 +41,7 @@ export default {
   props: {
     imageLengths: {
       type: Object,
-      default: () => ({ 'tb': 16, 'dc': 20, 'ks': 11 })
+      default: () => ({ 'tb': 16, 'dc': 19, 'ks': 11 })
     },
     contents: {
       type: Object,
@@ -50,7 +50,7 @@ export default {
           'dc': [
             'Dakota Crescent was built in 1958, modelled after British towns and adapted to suit the tropical climate. In 2017, it was announced by the government that the cluster with the central courtyard will be repurposed for civic and community usage.',
             'To be torn down to make way for new flats, the windows on the first floors are boarded up to prevent illegal entry.',
-            'The other courtyard that is not slated for preservation. It lies unkempt, but we still noticed a family coming over to play badminton after we were done photographing the area.',
+            'The other courtyard that is not slated for preservation. It lies unkempt, but we still noticed a family coming over to play badminton after we were done photographing the area. A badminton court may not incite as much nostalgia as a sand-based playground it is often times found, whereas most sand-based playgrounds have been replaced with synthetic ground.',
             '(Scrollable) Some ornaments can still be seen hung on the ceiling. The brickwork is also substantially different from the HDB flats we see nowadays, with the brick pattern visible from afar.<br/><br/>A ramp has also been added into the structure retroactively, catering to the ageing population in the area.',
             '(Scrollable) Close up look at the different grille designs. Wear and tear from the elements would prompt the owners to replace their grilles.',
             'Different types of window installations can be seen here. We can also see the zinc plating under the bamboo pole holders, which is not found in HDB flats, as it rusts easily.',
@@ -66,7 +66,7 @@ export default {
             'This is one of the low-rise stretches that is slated for preservation. The first floor was previously commercialized as shops but have since closed, pending repurposing. It is significantly different in architecture versus the ones shown in the earlier photos.',
             'Stairs leading to the second floor, which was the residential area.',
             '(Scrollable) The stairwell of one of the buildings slated for preservation.',
-            'The famous pigeon playground to be preserved, as we imagine old playgrounds from the past would present a higher nostalgic factor to future homeowners. It is part of the central courtyard in between four blocks that form a square around it, and this concept is one of the very few remaining in Singapore.'
+            'The famous Dove playground to be preserved, as we imagine old playgrounds from the past would present a higher nostalgic factor to future homeowners. It is part of the central courtyard in between four blocks that form a square around it, and this concept is one of the very few remaining in Singapore.'
           ],
           'tb': [
             '(Scrollable) Tiong Bahru is famous to tourists and Singaporeans alike for shophouses that sell exquisite products that may not be found elsewhere in Singapore.'
