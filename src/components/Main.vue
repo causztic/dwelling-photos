@@ -41,7 +41,7 @@ export default {
   props: {
     imageLengths: {
       type: Object,
-      default: () => ({ 'tb': 13, 'dc': 19, 'ks': 11 })
+      default: () => ({ 'tb': 12, 'dc': 19, 'ks': 11 })
     },
     contents: {
       type: Object,
