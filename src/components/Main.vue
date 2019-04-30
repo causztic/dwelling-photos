@@ -23,7 +23,7 @@
 import ImageButton from './ImageButton.vue'
 
 const originalTitle = 'SIT Flats'
-const originalContent = 'Exploring the architectural designs and policies of the Singapore Improvement Trust (SIT) Flats, and investigating the difference in repurposings of the flats.<br /><ol><li>Some images on the left can be scrolled</li><li>Click on any image below to start</li><li>Supporting commentary is given to provide insight</li><li>We also like to put out a disclaimer that we are not professional photographers but we try our best!<li>All of the photos we took are available <a href="https://drive.google.com/drive/folders/181DZrJQYRQalXI6n1V5f7IxvCCaB5NIs?usp=sharing">here</a></li>'
+const originalContent = 'Exploring the architectural designs and policies of the Singapore Improvement Trust (SIT) Flats, and investigating the difference in repurposings of the flats.<br /><ol><li>Some images on the left can be scrolled</li><li>Click on any image below to start</li><li>Supporting commentary is given to provide insight</li><li>Some images can be quite large, please wait warmly for them to load!</li><li>We also like to put out a disclaimer that we are not professional photographers but we try our best!<li>All of the photos we took are available <a href="https://drive.google.com/drive/folders/181DZrJQYRQalXI6n1V5f7IxvCCaB5NIs?usp=sharing">here</a></li>'
 
 export default {
   name: 'HelloWorld',
