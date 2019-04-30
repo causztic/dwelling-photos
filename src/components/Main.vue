@@ -23,7 +23,7 @@
 import ImageButton from './ImageButton.vue'
 
 const originalTitle = 'SIT Flats'
-const originalContent = 'Exploring historical reasons for the creation of the Singapore Improvement Trust, with its policies and architectural designs of its flats. <br /><ol><li>Some images on the left can be scrolled</li><li>Click on any image below to start</li><li>Supporting commentary is given to provide insight.</li>'
+const originalContent = 'Exploring historical reasons for the creation of the Singapore Improvement Trust, with its policies and architectural designs of its flats. <br /><ol><li>Some images on the left can be scrolled</li><li>Click on any image below to start</li><li>Supporting commentary is given to provide insight</li><li>We also like to put out a disclaimer that we are not professional photographers but we try our best!'
 
 export default {
   name: 'HelloWorld',
@@ -59,14 +59,14 @@ export default {
             'We did not manage to take a photo of the full view of Block 12 as there was a Malay wedding shoot, but that shoot took place with this brick pattern as the backdrop.',
             '(Scrollable) These lifts do not stop on every floor. Also, since they were built back in 1958, there are very few engineers now that are able to repair it.',
             '(Scrollable) Owners took to their hands to repaint or even rebuild the balcony doors to fit their personas.',
-            'Due to poorer drainage systems in the past, we can imagine that the lifts are placed on higher grounds to possibly prevent them from getting flooded during the monsoon sesasons.',
+            'Due to poorer drainage systems in the past, we can imagine that the lifts are placed on higher grounds to possibly prevent them from getting flooded during the monsoon sesasons. The "butterfly" design, with the blocks bending at 90 degrees was supposedly to help with the ventilation.',
             'Members of the public welcome the Government\'s notion to retain parts of the estate, but want a more pre-emptive measure to lobby for conservation instead of a reactive one. <a href="https://www.todayonline.com/singapore/partial-conservation-dakota-crescent-gives-heritage-enthusiasts-hope">https://www.todayonline.com/singapore/partial-conservation-dakota-crescent-gives-heritage-enthusiasts-hope</a>',
             '',
             '(Scrollable) A <i>Karung Guni</i> or a homeless person repurposed the space illegally to store their wares. We also noted that the temporary abandonment and ruination brings across a new dynamic in the ecosystem, with a clearly larger pigeon population and vagrants.',
             'This is one of the low-rise stretches that is slated for preservation. The first floor was previously commercialized as shops but have since closed, pending repurposing. It is significantly different in architecture versus the ones shown in the earlier photos.',
             'Stairs leading to the second floor, which was the residential area.',
             '(Scrollable) The stairwell of one of the buildings slated for preservation.',
-            'The famous pigeon playground to be preserved, as we imagine old playgrounds from the past would present a higher nostalgic factor to future homeowners. It is to be noted that this was built post SIT, in the 1970s.'
+            'The famous pigeon playground to be preserved, as we imagine old playgrounds from the past would present a higher nostalgic factor to future homeowners. It is part of the central courtyard in between four blocks that form a square around it, and this concept is one of the very few remaining in Singapore.'
           ],
           'tb': [
             '(Scrollable) Tiong Bahru is famous to tourists and Singaporeans alike for shophouses that sell exquisite products that may not be found elsewhere in Singapore.'
