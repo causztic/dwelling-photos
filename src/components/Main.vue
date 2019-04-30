@@ -23,7 +23,7 @@
 import ImageButton from './ImageButton.vue'
 
 const originalTitle = 'SIT Flats'
-const originalContent = 'Exploring historical reasons for the creation of the Singapore Improvement Trust, with its policies and architectural designs of its flats. <br /><ol><li>Some images on the left can be scrolled</li><li>Click on any image below to start</li><li>Supporting commentary is given to provide insight</li><li>We also like to put out a disclaimer that we are not professional photographers but we try our best!<li>All of the photos we took are available <a href="https://drive.google.com/drive/folders/181DZrJQYRQalXI6n1V5f7IxvCCaB5NIs?usp=sharing">here</a></li>'
+const originalContent = 'Exploring the architectural designs and policies of the Singapore Improvement Trust (SIT) Flats, and investigating the difference in repurposings of the flats.<br /><ol><li>Some images on the left can be scrolled</li><li>Click on any image below to start</li><li>Supporting commentary is given to provide insight</li><li>We also like to put out a disclaimer that we are not professional photographers but we try our best!<li>All of the photos we took are available <a href="https://drive.google.com/drive/folders/181DZrJQYRQalXI6n1V5f7IxvCCaB5NIs?usp=sharing">here</a></li>'
 
 export default {
   name: 'HelloWorld',
@@ -78,7 +78,9 @@ export default {
             'A prime example of the Streamline Moderne style:<ul><li>clean, curved shapes and rounded corners</li><li>long horizontal and vertical lines</li><li>simple, uncluttered lines</li><li>bands of windows</li><li>flat roofs</li><li>racing stripes to simulate speed and motion</li><li>glass blocks and group windows</li></ul>The flats\' curved corners and cantilevered shades convey a modern yet pleasing appearance. As early residents thought the design of some blocks looked like the wings of an aeroplane, these flats were also called "aeroplane flats".',
             'Apartments in a flat separated by a single staircase that could barely fit 2 people width-wise. We could hear the racket caused by the families with small children as we took this photo.',
             '(Scrollable) A landmark in SIT flats - the spiral staircase leads directly to the entrances of the apartments, although some seemed to be boarded up for good (second and third floor)',
-            'An entire block of flats with spiral staircases, but the 3 in the middle were normal staircases, possibly to break the design monotony or other functional reason'
+            'An entire block of flats with spiral staircases, but the 3 in the middle were normal staircases, possibly to break the design monotony or other functional reason',
+            'The reconstructed Community Centre. It was originally built to host activities to promote kinship among neighbours.',
+            'A close-up picture of the Community Centre in the past. The area it occupies has since expanded to accommodate more facilities for the public'
           ]
         }
       )
