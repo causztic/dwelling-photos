@@ -74,7 +74,8 @@ export default {
             'Tourists roaming around the area was a common sight, sporting sleeveless attires due to the hot and humid weather in Singapore',
             '(Scrollable) One of the remaining SIT flats. Residents on the upper floors redesigned the windows, while the ones on the ground floor remained unchanged. This creates a dissonance in the overall aesthetics of the building',
             'The backyard of the SIT flats. Clothing racks are installed but residents appear to not use them.',
-            'A single road separates condominiums (left), HDB Flats (center) as well as SIT flats (right).'
+            'A single road separates condominiums (left), HDB Flats (center) as well as SIT flats (right).',
+            'A prime example of the Streamline Moderne style:<ul><li>Clean, curve shapes and rounded corners</li><li>long horizontal and vertical lines</li><li>simple, uncluttered lines</li>bands of windows<li>flat roofs</li><li>racing stripes to simulate speed and motion</li><li>glass blocks and group windows</li></ul>The flats\' curved corners and cantilevered shades convey a modern yet pleasing appearance. As early residents thought the design of some blocks looked like the wings of an aeroplane, these flats were also called "aeroplane flats".'
           ]
         }
       )
