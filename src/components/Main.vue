@@ -5,6 +5,7 @@
     <div class="content">
       <div class="controls" :class="{ disabled: main }">
         <img src="/static/icons/left-arrow.svg" @click="previousImage"/>
+        <span class="counter">{{area ? `${imageIndices[area]} of ${imageLengths[area]}` : null}}</span>
         <img src="/static/icons/right-arrow.svg" @click="nextImage"/>
       </div>
       <h1>{{title}}</h1>
@@ -22,8 +23,7 @@
 import ImageButton from './ImageButton.vue'
 
 const originalTitle = 'SIT Flats'
-const originalContent = 'Exploring historical reasons for the creation of the Singapore Improvement Trust, with its policies and architectural designs of its flats. <br /><ol><li>Some images on the left can be scrolled</li><li>Click on any image below to start</li>'
-const imageLengths = { 'tb': 18, 'dc': 5, 'ks': 11 }
+const originalContent = 'Exploring historical reasons for the creation of the Singapore Improvement Trust, with its policies and architectural designs of its flats. <br /><ol><li>Some images on the left can be scrolled</li><li>Click on any image below to start</li><li>Supporting commentary is given to provide insight.</li>'
 
 export default {
   name: 'HelloWorld',
@@ -38,22 +38,64 @@ export default {
       imageIndices: { 'tb': 1, 'dc': 1, 'ks': 1 }
     }
   },
+  props: {
+    imageLengths: {
+      type: Object,
+      default: () => ({ 'tb': 16, 'dc': 20, 'ks': 11 })
+    },
+    contents: {
+      type: Object,
+      default: () => (
+        {
+          'dc': [
+            'Dakota Crescent was built in 1958, modelled after British towns and adapted to suit the tropical climate. In 2017, it was announced by the government that the cluster with the central courtyard will be repurposed for civic and community usage.',
+            'To be torn down to make way for new flats, the windows on the first floors are boarded up to prevent illegal entry.',
+            'The other courtyard that is not slated for preservation. It lies unkempt, but we still noticed a family coming over to play badminton after we were done photographing the area.',
+            '(Scrollable) Some ornaments can still be seen hung on the ceiling. The brickwork is also substantially different from the HDB flats we see nowadays, with the brick pattern visible from afar.<br/><br/>A ramp has also been added into the structure retroactively with the ageing population in the area.',
+            '(Scrollable) Close up look at the different grille designs. Wear and tear from the elements would prompt the owners to replace their grilles.',
+            'Different types of window installations can be seen here. We can also see the zinc plating under the bamboo pole holders, which is not found in HDB flats, as it rusts easily.',
+            'The back view of one of the buildings with its unique tesellating pattern.',
+            'Leftover clothes pegs from the previous owner.',
+            'We did not manage to take a photo of the full view of Block 12 as there was a Malay wedding shoot, but that shoot took place with this brick pattern as the backdrop.',
+            '(Scrollable) These lifts do not stop on every floor. Also, since they were built back in 1958, there are very few engineers now that are able to repair it.',
+            '(Scrollable) Owners took to their hands to repaint or even rebuild the balcony doors to fit their personas.',
+            'Due to poorer drainage systems in the past, we can imagine that the lifts are placed on higher grounds to possibly prevent them from getting flooded during the monsoon sesasons.',
+            'Members of the public welcome the Government\'s notion to retain parts of the estate, but want a more pre-emptive measure to lobby for conservation instead of a reactive one. <a href="https://www.todayonline.com/singapore/partial-conservation-dakota-crescent-gives-heritage-enthusiasts-hope">https://www.todayonline.com/singapore/partial-conservation-dakota-crescent-gives-heritage-enthusiasts-hope</a>',
+            '',
+            '(Scrollable) A <i>Karung Guni</i> or a homeless person repurposed the space illegally to store their wares. We also noted that the temporary abandonment and ruination brings across a new dynamic in the ecosystem, with a clearly larger pigeon population and vagrants.',
+            'This is one of the low-rise stretches that is slated for preservation. The first floor was previously commercialized as shops but have since closed, pending repurposing. It is significantly different in architecture versus the ones shown in the earlier photos.',
+            'Stairs leading to the second floor, which was the residential area.',
+            '(Scrollable) The stairwell of one of the buildings slated for preservation.',
+            'The famous pigeon playground to be preserved, as we imagine old playgrounds from the past would present a higher nostalgic factor to future homeowners.'
+          ],
+          'tb': [
+            '(Scrollable) Tiong Bahru is famous to tourists and Singaporeans alike for shophouses that sell exquisite products that may not be found elsewhere in Singapore.'
+          ]
+        }
+      )
+    }
+  },
   methods: {
+    setContent: function () {
+      this.content = this.contents[this.area] ? this.contents[this.area][this.imageIndices[this.area] - 1] : ''
+    },
     previousImage: function () {
       if (this.imageIndices[this.area] === 1) {
-        this.imageIndices[this.area] = imageLengths[this.area]
+        this.imageIndices[this.area] = this.imageLengths[this.area]
       } else {
         this.imageIndices[this.area] -= 1
       }
       this.img = `/static/${this.area}/${this.imageIndices[this.area]}_ex.webp`
+      this.setContent()
     },
     nextImage: function () {
-      if (this.imageIndices[this.area] === imageLengths[this.area]) {
+      if (this.imageIndices[this.area] === this.imageLengths[this.area]) {
         this.imageIndices[this.area] = 1
       } else {
         this.imageIndices[this.area] += 1
       }
       this.img = `/static/${this.area}/${this.imageIndices[this.area]}_ex.webp`
+      this.setContent()
     },
     navigate: function (type) {
       this.area = type
@@ -61,17 +103,17 @@ export default {
         this.main = false
         this.img = '/static/tb/1_ex.webp'
         this.title = 'Tiong Bahru'
-        this.content = 'Coming soon'
+        this.setContent()
       } else if (type === 'dc') {
         this.main = false
         this.img = '/static/dc/1_ex.webp'
         this.title = 'Dakota Crescent'
-        this.content = 'Coming soon'
+        this.setContent()
       } else if (type === 'ks') {
         this.main = false
         this.img = '/static/ks/1_ex.webp'
         this.title = 'Kampung Silat'
-        this.content = 'Coming soon'
+        this.setContent()
       } else {
         this.main = true
         this.img = '/static/1.webp'
@@ -90,10 +132,15 @@ export default {
   top: 22px;
   width: 32px;
   cursor: pointer;
+  z-index: 2;
 }
 
 .home-button:hover {
   opacity: 0.5;
+}
+
+.home-button.disabled:hover {
+  opacity: 0;
 }
 
 .disabled {
@@ -104,15 +151,17 @@ export default {
 .controls {
   position: absolute;
   top: 22px;
-  left: -90px;
+  left: -150px;
   z-index: 2;
-  padding: 6px 0 0 3px;
+  padding: 6px 0 6px 3px;
   background-color: rgba(255,255,255,0.5);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .controls img {
   width: 32px;
-  margin-right: 16px;
   cursor: pointer;
 }
 
@@ -127,6 +176,7 @@ export default {
   flex-direction: column;
   width: 490px;
   position: relative;
+  text-align: left;
 }
 
 .places {
@@ -136,6 +186,7 @@ export default {
   justify-content: space-around;
   align-items: flex-end;
   width: 100%;
+  text-align: center;
 }
 
 h1 {
