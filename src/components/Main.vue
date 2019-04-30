@@ -66,7 +66,7 @@ export default {
             'This is one of the low-rise stretches that is slated for preservation. The first floor was previously commercialized as shops but have since closed, pending repurposing. It is significantly different in architecture versus the ones shown in the earlier photos.',
             'Stairs leading to the second floor, which was the residential area.',
             '(Scrollable) The stairwell of one of the buildings slated for preservation.',
-            'The famous pigeon playground to be preserved, as we imagine old playgrounds from the past would present a higher nostalgic factor to future homeowners.'
+            'The famous pigeon playground to be preserved, as we imagine old playgrounds from the past would present a higher nostalgic factor to future homeowners. It is to be noted that this was built post SIT, in the 1970s.'
           ],
           'tb': [
             '(Scrollable) Tiong Bahru is famous to tourists and Singaporeans alike for shophouses that sell exquisite products that may not be found elsewhere in Singapore.'
