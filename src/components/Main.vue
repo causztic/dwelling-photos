@@ -82,6 +82,11 @@ export default {
             'The reconstructed Community Centre. It was originally built to host activities to promote kinship among neighbours.',
             'A close-up picture of the Community Centre in the past. The area it occupies has since expanded to accommodate more facilities for the public',
             'A shophouse-styled restaurant using wooden boards to close up the shop; a rare sight nowadays'
+          ],
+          'ks': [
+            'Kampong Silat Estate was one of the pioneering SIT estates. The construction commenced in 1948 and was scheduled to complete by 1949. However, due to the climate issue which posed a challenge to the construction process, it was only completed in 1952.<br/><br/>We can see the remaining few buildings in the distance.',
+            '',
+            'Kampong Silat has been repurposed to be a nursing home, and then replaced by Lee Ah Mooi Old Age Home in 2017, renovating the area to provide more amenities to the people in need.'
           ]
         }
       )
