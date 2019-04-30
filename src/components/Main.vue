@@ -51,7 +51,7 @@ export default {
             'Dakota Crescent was built in 1958, modelled after British towns and adapted to suit the tropical climate. In 2017, it was announced by the government that the cluster with the central courtyard will be repurposed for civic and community usage.',
             'To be torn down to make way for new flats, the windows on the first floors are boarded up to prevent illegal entry.',
             'The other courtyard that is not slated for preservation. It lies unkempt, but we still noticed a family coming over to play badminton after we were done photographing the area.',
-            '(Scrollable) Some ornaments can still be seen hung on the ceiling. The brickwork is also substantially different from the HDB flats we see nowadays, with the brick pattern visible from afar.<br/><br/>A ramp has also been added into the structure retroactively with the ageing population in the area.',
+            '(Scrollable) Some ornaments can still be seen hung on the ceiling. The brickwork is also substantially different from the HDB flats we see nowadays, with the brick pattern visible from afar.<br/><br/>A ramp has also been added into the structure retroactively, catering to the ageing population in the area.',
             '(Scrollable) Close up look at the different grille designs. Wear and tear from the elements would prompt the owners to replace their grilles.',
             'Different types of window installations can be seen here. We can also see the zinc plating under the bamboo pole holders, which is not found in HDB flats, as it rusts easily.',
             'The back view of one of the buildings with its unique tesellating pattern.',
