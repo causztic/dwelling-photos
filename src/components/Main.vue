@@ -41,7 +41,7 @@ export default {
   props: {
     imageLengths: {
       type: Object,
-      default: () => ({ 'tb': 14, 'dc': 19, 'ks': 11 })
+      default: () => ({ 'tb': 13, 'dc': 19, 'ks': 11 })
     },
     contents: {
       type: Object,
@@ -71,11 +71,14 @@ export default {
           'tb': [
             '(Scrollable) Tiong Bahru is famous to tourists and Singaporeans alike for shophouses that sell exquisite products that may not be found elsewhere in Singapore.',
             'Shops are accommodating to tourists as shown from the multilingual sign in Chinese, Japanese and English (in the middle of the photo)',
-            'Tourists roaming around the area was a common sight, sporting sleeveless attires due to the hot and humid weather in Singapore',
-            '(Scrollable) One of the remaining SIT flats. Residents on the upper floors redesigned the windows, while the ones on the ground floor remained unchanged. This creates a dissonance in the overall aesthetics of the building',
+            'Tourists roaming around the area was a common sight, sporting sleeveless attires due to the hot and humid weather in Singapore.',
+            '(Scrollable) One of the remaining SIT flats. Residents on the upper floors redesigned the windows, while the ones on the ground floor remained unchanged. This creates a dissonance in the overall aesthetics of the building.',
             'The backyard of the SIT flats. Clothing racks are installed but residents appear to not use them.',
             'A single road separates condominiums (left), HDB Flats (center) as well as SIT flats (right).',
-            'A prime example of the Streamline Moderne style:<ul><li>Clean, curve shapes and rounded corners</li><li>long horizontal and vertical lines</li><li>simple, uncluttered lines</li>bands of windows<li>flat roofs</li><li>racing stripes to simulate speed and motion</li><li>glass blocks and group windows</li></ul>The flats\' curved corners and cantilevered shades convey a modern yet pleasing appearance. As early residents thought the design of some blocks looked like the wings of an aeroplane, these flats were also called "aeroplane flats".'
+            'A prime example of the Streamline Moderne style:<ul><li>clean, curved shapes and rounded corners</li><li>long horizontal and vertical lines</li><li>simple, uncluttered lines</li><li>bands of windows</li><li>flat roofs</li><li>racing stripes to simulate speed and motion</li><li>glass blocks and group windows</li></ul>The flats\' curved corners and cantilevered shades convey a modern yet pleasing appearance. As early residents thought the design of some blocks looked like the wings of an aeroplane, these flats were also called "aeroplane flats".',
+            'Apartments in a flat separated by a single staircase that could barely fit 2 people width-wise. We could hear the racket caused by the families with small children as we took this photo.',
+            '(Scrollable) A landmark in SIT flats - the spiral staircase leads directly to the entrances of the apartments, although some seemed to be boarded up for good (second and third floor)',
+            'An entire block of flats with spiral staircases, but the 3 in the middle were normal staircases, possibly to break the design monotony or other functional reason'
           ]
         }
       )
