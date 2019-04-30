@@ -41,7 +41,7 @@ export default {
   props: {
     imageLengths: {
       type: Object,
-      default: () => ({ 'tb': 12, 'dc': 19, 'ks': 11 })
+      default: () => ({ 'tb': 13, 'dc': 18, 'ks': 11 })
     },
     contents: {
       type: Object,
@@ -80,7 +80,8 @@ export default {
             '(Scrollable) A landmark in SIT flats - the spiral staircase leads directly to the entrances of the apartments, although some seemed to be boarded up for good (second and third floor)',
             'An entire block of flats with spiral staircases, but the 3 in the middle were normal staircases, possibly to break the design monotony or other functional reason',
             'The reconstructed Community Centre. It was originally built to host activities to promote kinship among neighbours.',
-            'A close-up picture of the Community Centre in the past. The area it occupies has since expanded to accommodate more facilities for the public'
+            'A close-up picture of the Community Centre in the past. The area it occupies has since expanded to accommodate more facilities for the public',
+            'A shophouse-styled restaurant using wooden boards to close up the shop; a rare sight nowadays'
           ]
         }
       )
