@@ -27,6 +27,12 @@ body {
   margin: 0;
 }
 
+blockquote {
+  background-color: #f4f4f4;
+  padding: 1em;
+  margin: 1em 0;
+}
+
 ol li {
   text-align: left;
 }
