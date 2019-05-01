@@ -65,9 +65,9 @@ export default {
             '',
             '(Scrollable) A Karung Guni or a homeless person repurposed the space illegally to store their wares. We also noted that the temporary abandonment and ruination brings across a new dynamic in the ecosystem, with a clearly larger pigeon population and vagrants.',
             'This is one of the low-rise stretches that is slated for preservation, designed differently. The first floor was previously commercialized as shops but have since closed, pending repurposing.',
+            'The famous Dove playground to be preserved, as we imagine old playgrounds from the past would present a higher nostalgic factor to future homeowners. It is part of the central courtyard in between four blocks that form a square around it, and this concept is one of the very few remaining in Singapore.',
             'Stairs leading to the second floor, which was the residential area. We would have liked to go in and explore but the entrance was locked. ',
-            '(Scrollable) The stairwell of one of the buildings slated for preservation.',
-            'The famous Dove playground to be preserved, as we imagine old playgrounds from the past would present a higher nostalgic factor to future homeowners. It is part of the central courtyard in between four blocks that form a square around it, and this concept is one of the very few remaining in Singapore.'
+            '(Scrollable) The stairwell of one of the buildings slated for preservation.'
           ],
           'tb': [
             '(Scrollable) Tiong Bahru is famous to tourists and Singaporeans alike for shophouses that sell exquisite products that may not be found elsewhere in Singapore',
@@ -114,14 +114,14 @@ export default {
             '',
             '',
             '',
+            '<blockquote>“Buildings, like other environmental structures, are never complete but continually under construction” - Ingold, The Perception of the Environment: Essays on Livelihood, Dwelling and Skill</blockquote>If the buildings are constantly in a state of construction, what exactly is the state or point in time of the building that should be preserved? It will be difficult to reach a conclusive decision as to which “version” of the buildings that should treated as the “model for preservation”. This is especially so if the inhabitants are always involved in making changes to their homes throughout time.',
+            'Perhaps, to preserve a certain state at a certain point in time is foolish as progress is <i>habitus</i>, and is instead necessary to preserve "all states" through development of new buildings and tearing down the same old ones.',
             '',
             '',
-            '',
-            '',
-            'However, there seems to be some form of conflict of interest: the estates are not only treated as preservation sites, but also being commercialized by being put up for sale. By subjecting the buildings as private commodities, this was at odds with the preservation status of being a national or public good, which was described by URA to “retain the inherent spirit and original ambience of historic buildings”, and requiring “an appreciation and understanding of the architecture and structure of historic buildings” - the former part felt wanting with the commercialization. ',
-            '',
-            '',
-            'The playground was designed by Mr <a target="_blank" href="https://www.esplanade.com/tributesg/administrators/khor-ean-ghee">Khor Ean Ghee</a>, who also designed other animal themed playgrounds in other areas in Singapore. A similar design may trigger collective nostalgia in the community.<br/>Consequently, these landmarks become “Sites of Memory” for the people (Pierre Noa, Les Lieux de Mémoire). The intersection between memory and history creates reference points, which becomes part of the nation’s official history.'
+            'If we dismiss the radical idea in the last few pages, there also seems to be some form of conflict of interest: the estates are not only treated as preservation sites, but also being commercialized by being put up for sale. By subjecting the buildings as private commodities, this was at odds with the preservation status of being a national or public good, which was described by URA to “retain the inherent spirit and original ambience of historic buildings”, and requiring “an appreciation and understanding of the architecture and structure of historic buildings” - the former part felt wanting with the commercialization. ',
+            'The playground was designed by Mr <a target="_blank" href="https://www.esplanade.com/tributesg/administrators/khor-ean-ghee">Khor Ean Ghee</a>, who also designed other animal themed playgrounds in other areas in Singapore. A similar design may trigger collective nostalgia in the community.<br/>Consequently, these landmarks become “Sites of Memory” for the people (Pierre Noa, Les Lieux de Mémoire). The intersection between memory and history creates reference points, which becomes part of the nation’s official history. <br/><br/> ',
+            'An interesting mix of process, nostalgia, capitalism and politics brings about a delicate balance to preservation, and it seems that going for the "common denominator" is the approach the Government is taking.',
+            ''
           ],
           'tb': [
             'It can be said that commercialisation for tourism can be due to “pragmatic economic reasons” as it brings about revenue for the country. That said, it can also mean that the preservation is due to the exploitation of local features of historical, cultural and scenic interest.',
