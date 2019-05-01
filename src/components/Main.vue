@@ -79,7 +79,7 @@ export default {
             '',
             'Apartments in a flat separated by a single staircase that could barely fit 2 people width-wise. We could hear the racket caused by the families with small children as we took this photo.',
             '(Scrollable) A landmark in SIT flats - the spiral staircase leads directly to the entrances of the apartments, although some seemed to be boarded up for good',
-            'We have to keep the strategy that the long-running party in the government takes in its policy-making in mind. Economic growth triumphs any form of social repercussions in terms of nostalgia.',
+            '',
             'The reconstructed Community Centre. It was originally built to host activities to promote kinship among neighbours.',
             'A close-up picture of the Community Centre in the past. The area it occupies has since expanded to accommodate more facilities for the public',
             ''
