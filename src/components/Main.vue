@@ -41,7 +41,7 @@ export default {
   props: {
     imageLengths: {
       type: Object,
-      default: () => ({ 'tb': 13, 'dc': 18, 'ks': 11 })
+      default: () => ({ 'tb': 13, 'dc': 18, 'ks': 10 })
     },
     contents: {
       type: Object,
@@ -83,9 +83,16 @@ export default {
             'A shophouse-styled restaurant using wooden boards to close up the shop; a rare sight nowadays'
           ],
           'ks': [
+            'Melati and Kemuning (the one behind) are the Spooner Road flats. They originally belongs to KTM as quarters for their workers. It was handed over to Singapore Land Authority (SLA) in 2011.',
             'Kampong Silat Estate was one of the pioneering SIT estates. The construction commenced in 1948 and was scheduled to complete by 1949. However, due to the climate issue which posed a challenge to the construction process, it was only completed in 1952.<br/><br/>We can see the remaining few buildings in the distance.',
-            '',
-            'Kampong Silat has been repurposed to be a nursing home, and then replaced by Lee Ah Mooi Old Age Home in 2017, renovating the area to provide more amenities to the people in need.'
+            'View of the last 5 flats under construction.',
+            'Kampong Silat has been repurposed to be a nursing home, and then replaced by Lee Ah Mooi Old Age Home in 2017, renovating the area to provide more amenities to the people in need.',
+            'A snapshot of how the flats looks like. You can see that while there are works done between the flats, the flats are kept the way they were.',
+            'An aerial view from the 8th floor of a neighbouring flat.',
+            'In the year 2007, the 13 flats were included in the Selective En Bloc Redevelopment Scheme (SERS) program. By 2012, most of the residents were relocated to new flats somewhere else (Remember Singapore, 2012)',
+            'This place is going to have a condominium together with the five conserved flats. To the right, the residential area will be connected to the Rail Corridor.',
+            'An aerial view from 8th floor of a neighbouring flat.',
+            'A chinese temple in the neighbourhood. The close proximity to the housing flats provides the convenience for the residents.'
           ]
         }
       )
