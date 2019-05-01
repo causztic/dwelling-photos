@@ -23,7 +23,7 @@
 import ImageButton from './ImageButton.vue'
 
 const originalTitle = 'SIT Flats'
-const originalContent = 'Exploring the architectural designs and policies of the Singapore Improvement Trust (SIT) Flats, and investigating the difference in repurposings of the flats.<br /><ol><li>Some images on the left can be scrolled</li><li>Click on any image below to start</li><li>Supporting commentary is given to provide insight</li><li>Some images can be quite large, please wait warmly for them to load!</li><li>We also like to put out a disclaimer that we are not professional photographers but we try our best!<li>All of the photos we took are available <a href="https://drive.google.com/drive/folders/181DZrJQYRQalXI6n1V5f7IxvCCaB5NIs?usp=sharing">here</a></li>'
+const originalContent = 'Exploring the architectural designs and policies of the Singapore Improvement Trust (SIT) Flats, and investigating the difference in repurposings of the flats.<br /><ol><li>Some images on the left can be scrolled</li><li>Click on any image below to start</li><li>Supporting commentary is given to provide insight</li><li>Some images can be quite large, please wait warmly for them to load!</li><li>We also like to put out a disclaimer that we are not professional photographers but we try our best!<li>All of the photos we took are available <a target="_blank" href="https://drive.google.com/drive/folders/181DZrJQYRQalXI6n1V5f7IxvCCaB5NIs?usp=sharing">here</a></li>'
 
 export default {
   name: 'HelloWorld',
@@ -60,13 +60,12 @@ export default {
             '(Scrollable) These lifts do not stop on every floor. Also, since they were built back in 1958, there are very few engineers now that are able to repair it.',
             '(Scrollable) Owners took to their hands to repaint or even rebuild the balcony doors to fit their personas.',
             'Due to poorer drainage systems in the past, we can imagine that the lifts are placed on higher grounds to possibly prevent them from getting flooded during the monsoon sesasons. The "butterfly" design, with the blocks bending at 90 degrees was supposedly to help with the ventilation.',
-            'Members of the public welcome the Government\'s notion to retain parts of the estate, but want a more pre-emptive measure to lobby for conservation instead of a reactive one. <a href="https://www.todayonline.com/singapore/partial-conservation-dakota-crescent-gives-heritage-enthusiasts-hope">https://www.todayonline.com/singapore/partial-conservation-dakota-crescent-gives-heritage-enthusiasts-hope</a>',
-            '',
+            'Members of the public welcome the Government\'s notion to retain parts of the estate, but want a more pre-emptive measure to lobby for conservation instead of a reactive one. <a target="_blank" href="https://www.todayonline.com/singapore/partial-conservation-dakota-crescent-gives-heritage-enthusiasts-hope">https://www.todayonline.com/singapore/partial-conservation-dakota-crescent-gives-heritage-enthusiasts-hope</a>',
             '(Scrollable) A <i>Karung Guni</i> or a homeless person repurposed the space illegally to store their wares. We also noted that the temporary abandonment and ruination brings across a new dynamic in the ecosystem, with a clearly larger pigeon population and vagrants.',
             'This is one of the low-rise stretches that is slated for preservation. The first floor was previously commercialized as shops but have since closed, pending repurposing. It is significantly different in architecture versus the ones shown in the earlier photos.',
             'Stairs leading to the second floor, which was the residential area.',
             '(Scrollable) The stairwell of one of the buildings slated for preservation.',
-            'The famous Dove playground to be preserved, as we imagine old playgrounds from the past would present a higher nostalgic factor to future homeowners. It is part of the central courtyard in between four blocks that form a square around it, and this concept is one of the very few remaining in Singapore.'
+            'The famous Dove playground to be preserved, as we imagine old playgrounds from the past would present a higher nostalgic factor to future homeowners. It is part of the central courtyard in between four blocks that form a square around it, and this concept is one of the very few remaining in Singapore.<br/><br/>The playground was designed by Mr <a target="_blank" href="https://www.esplanade.com/tributesg/administrators/khor-ean-ghee">Khor Ean Ghee</a>, who also designed other animal themed playgrounds in other areas in Singapore.'
           ],
           'tb': [
             '(Scrollable) Tiong Bahru is famous to tourists and Singaporeans alike for shophouses that sell exquisite products that may not be found elsewhere in Singapore.',
